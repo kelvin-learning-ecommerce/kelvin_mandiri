@@ -1,4 +1,4 @@
-# Pasti System Coding Challenge
+# Kelvin Mandiri Coding Challenge
 
 ## Getting Started
 
