@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "pasti system test"
+rootProject.name = "kelvin mandiri"
 include(":app")

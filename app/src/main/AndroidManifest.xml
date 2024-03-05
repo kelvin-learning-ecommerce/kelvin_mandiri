@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".MainApplication"
+        android:name="com.kelvin.mandiri.MainApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -16,29 +16,28 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PastiSystemTest">
+        android:theme="@style/Theme.App">
         <activity
-            android:name=".ui.home.HomePageActivity"
-            android:exported="true"
-            android:theme="@style/Theme.PastiSystemTest">
+            android:name="com.kelvin.mandiri.presentation.home.HomePageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.kelvin.mandiri.ui.movielist.MovieListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.kelvin.mandiri.presentation.moviedetail.MovieDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.kelvin.mandiri.presentation.mlkit.MlActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.kelvin.mandiri.presentation.splash.SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.movielist.MovieListActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.kelvin.pastisystem.ui.moviedetail.MovieDetailActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.kelvin.pastisystem.ui.mlkit.FaceRecognitionActivity"
-            android:exported="true" />
-        <activity android:name="com.kelvin.pastisystem.ui.mlkit.MlActivity"
-            android:exported="true"
-            android:theme="@style/Theme.PastiSystemTest"/>
 
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
